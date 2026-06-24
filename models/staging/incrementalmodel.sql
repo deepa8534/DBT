@@ -1,8 +1,10 @@
+
 {{ 
-    config(materialized = 'incremental', unique_key = [ 'order_id', 'product_id']) 
+   config(materialized = 'incremental', unique_key =[ 'order_id', 'product_id'])
 }}
 
-select
+
+select 
 order_id,
 customer_id,
 order_date,
