@@ -7,9 +7,9 @@ order_id,
 customer_id,
 order_date,
 amount
-from {{source ('jaffle_shop','orders')}}
+from {{source ('jaffle_shop', 'orders')}}
 
 {% if is_incremental() %}
-  where order_date > (select max(order_date) from{{ this }})
-  
+  where order_date > (select max(order_date) from{{ this}})
+
 {% endif %}
