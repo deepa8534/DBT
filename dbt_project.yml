@@ -52,3 +52,19 @@ seeds:
       state: varchar(50)
       region: varchar(50)
       zone : varchar(10)
+  branch_master:
+     +column_types:
+        branch_code: varchar(50)
+        branch_name: varchar(50)
+        city: varchar(50)
+        state: varchar(50)
+        zone: varchar(50)
+        tier: vacrchar(50)
+  loan_type_config:
+      +column_types:
+        loan_type: varchar(50)
+        max_tenure_months: varchar(50)
+        base_rate: varchar(50)
+        risk_weight: varchar(50)
+        
+
