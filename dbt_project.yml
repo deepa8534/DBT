@@ -44,7 +44,7 @@ models:
       +materialized: table
 
 seeds: 
-  my_new_project: 
+  +my_new_project: 
   +schema: seeds
   +quote_columns: false
   state_region_mapping:
