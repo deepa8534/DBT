@@ -2,7 +2,7 @@
 
 select
     id              as order_id,
-    customer_id,
+    id              as customer_id,
     order_date,
     status,
     amount
