@@ -52,6 +52,3 @@ seeds:
       state: varchar(50)
       region: varchar(50)
       zone : varchar(10)
-  
-
-
